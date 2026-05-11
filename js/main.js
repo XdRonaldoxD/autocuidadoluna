@@ -31,7 +31,7 @@ const productos = [
     usos: ['🚗 Auto / Moto', '🏠 Hogar', '💼 Oficina'],
     desc: 'Ambientador colgante de alta intensidad. Elimina malos olores del interior del auto, habitación o lugar de trabajo. Su fragancia dura hasta 30 días. Solo cuelga del espejo retrovisor o cualquier espacio ventilado y disfruta el aroma.',
     frags: ['Fresa','Cherry','New Car','Vainilla','Chocolate','Uva'],
-    precios: [{label:'Unidad', val:'S/ 2.00'},{label:'Docena', val:'S/ 15.00', offer:true}],
+    precios: [{label:'Unidad', val:'S/ 2.00'},{label:'Docena', val:'S/ 18.00', offer:true}],
     bg: 'linear-gradient(135deg,#ffebee,#fce4ec)',
     cat: 'ambientadores'
   },
@@ -101,7 +101,7 @@ const productos = [
     usos: ['🚗 Auto completo', '🏍️ Moto', '🛞 Llantas', '🪟 Vidrios'],
     desc: 'Silicona en spray con atomizador de fácil aplicación. Rocía directamente sobre la superficie y distribuye uniformemente. Protege y renueva plásticos, llantas, caucho y vinil. Ideal para lavado de autos completo. Deja acabado brillante profesional y repele el polvo.',
     frags: [],
-    precios: [{label:'Unidad', val:'S/ 6.50'},{label:'3 a más c/u', val:'S/ 11.00', offer:true}],
+    precios: [{label:'Unidad', val:'S/ 6.50'},{label:'3 a más c/u', val:'S/ 13.50', offer:true}],
     bg: 'linear-gradient(135deg,#e8f5e9,#dcedc8)',
     cat: 'siliconas'
   },
@@ -111,7 +111,7 @@ const productos = [
     usos: ['🚗 Tablero premium', '🛞 Llantas', '🪑 Cuero / Vinil', '✨ Brillo profesional'],
     desc: 'Silicona premium marca Provecar con fragancia intensa y duradera. Fórmula Full Brillo de alta concentración. Protege y acondiciona cuero, vinil, caucho y plástico dejando un acabado brillante y sedoso. Muy usada por talleres y lavaderos profesionales. Repele el polvo y el agua.',
     frags: ['Chicle', 'Varias fragancias'],
-    precios: [{label:'Unidad', val:'S/ 10.00'},{label:'Docena', val:'S/ 85.00', offer:true}],
+    precios: [{label:'Unidad', val:'S/ 10.00'},{label:'Docena', val:'S/ 95.00', offer:true}],
     bg: 'linear-gradient(135deg,#fafafa,#eeeeee)',
     cat: 'siliconas'
   },
