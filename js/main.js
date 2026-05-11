@@ -156,6 +156,16 @@ const productos = [
     cat: 'limpieza'
   },
   {
+    nombre: 'Shampoo Automotriz 1 Litro',
+    badge: '1 Litro',
+    usos: ['🚗 Carrocería auto', '🏍️ Moto / Mototaxi', '🚐 Camionetas', '✨ Brillo concentrado'],
+    desc: 'Limpieza profunda con brillo concentrado. Rinde para múltiples lavadas. Para auto y moto.',
+    frags: [],
+    precios: [{label:'Litro', val:'S/ 15.00'}],
+    bg: 'linear-gradient(135deg,#fff3e0,#ffe0b2)',
+    cat: 'limpieza'
+  },
+  {
     nombre: 'Trapo de Microfibra 70x40 cm',
     badge: 'Microfibra Grande',
     usos: ['🚗 Secado auto', '🪟 Vidrios', '🪞 Espejos', '🏠 Superficies del hogar'],
@@ -198,11 +208,16 @@ const productos = [
 ];
 
 // ── CLICK EN TARJETA → MODAL ──
-document.querySelectorAll('.prod-card').forEach((card, i) => {
-  card.addEventListener('click', () => openModal(i));
+document.querySelectorAll('.prod-card').forEach((card) => {
+  card.addEventListener('click', () => {
+    const nombre = card.dataset.nombre;
+    if (!nombre) return;
+    const idx = productos.findIndex(p => p.nombre === nombre);
+    if (idx !== -1) openModal(idx, card);
+  });
 });
 
-function openModal(idx) {
+function openModal(idx, cardEl) {
   const p = productos[idx];
   if (!p) return;
 
@@ -210,8 +225,8 @@ function openModal(idx) {
   document.getElementById('modalNombre').textContent = p.nombre;
   document.getElementById('modalDesc').textContent = p.desc;
 
-  // Imagen (tomamos la del card)
-  const cardImg = document.querySelectorAll('.card-img-wrap')[idx];
+  // Imagen (tomamos la del card clickeado)
+  const cardImg = cardEl ? cardEl.querySelector('.card-img-wrap') : null;
   const modalImgDiv = document.getElementById('modalImg');
   modalImgDiv.style.background = p.bg;
   const imgEl = cardImg ? cardImg.querySelector('img') : null;
