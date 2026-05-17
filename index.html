@@ -1,732 +1,780 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luna Auto Cuidado — Catálogo</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="icon" type="image/png" href="assets/img/logo.png">
-<link rel="apple-touch-icon" href="assets/img/logo.png">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-99QNWH3ZTZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-99QNWH3ZTZ');
-</script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Auto Cuidado — Catálogo</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="apple-touch-icon" href="assets/img/logo.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-99QNWH3ZTZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-99QNWH3ZTZ');
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1260739122796927');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1260739122796927&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
+
 <body>
 
-<!-- ══ HERO SLIDER ══════════════════════════════════ -->
-<section class="hero-slider">
-  <!-- Slides -->
-  <div class="slide active" style="background:linear-gradient(135deg,rgba(10,32,80,0.82),rgba(0,174,204,0.55)), url('assets/img/slide_01.jpeg') center/cover no-repeat;">
-    <div class="slide-content">
-      <img src="assets/img/logo.png" class="slide-logo" alt="Logo Luna Auto Cuidado">
-      <h1 class="slide-title">LUNA <span>AUTO</span><br>CUIDADO</h1>
-      <p class="slide-sub">Productos de Limpieza y Cuidado Automotriz</p>
-      <span class="slide-badge">✦ Catálogo <span id="year-catalogo"></span> ✦</span>
-    </div>
-  </div>
-  <div class="slide" style="background:linear-gradient(135deg,rgba(10,32,80,0.88),rgba(141,198,63,0.4)), url('assets/img/producto_09.png') center/cover no-repeat;">
-    <div class="slide-content">
-      <div class="slide-icon"><i class="fa fa-star"></i></div>
-      <h2 class="slide-title2">Siliconas &amp;<br>Ambientadores</h2>
-      <p class="slide-sub">Brillo total para tu auto. Fragancias únicas y duraderas</p>
-      <div class="slide-prods">
-        <span><i class="fa fa-check-circle me-1"></i>Brillo Total</span>
-        <span><i class="fa fa-check-circle me-1"></i>New Car</span>
-        <span><i class="fa fa-check-circle me-1"></i>Chicle</span>
-        <span><i class="fa fa-check-circle me-1"></i>Fresa</span>
+  <!-- ══ HERO SLIDER ══════════════════════════════════ -->
+  <section class="hero-slider">
+    <!-- Slides -->
+    <div class="slide active"
+      style="background:linear-gradient(135deg,rgba(10,32,80,0.82),rgba(0,174,204,0.55)), url('assets/img/slide_01.jpeg') center/cover no-repeat;">
+      <div class="slide-content">
+        <img src="assets/img/logo.png" class="slide-logo" alt="Logo Luna Auto Cuidado">
+        <h1 class="slide-title">LUNA <span>AUTO</span><br>CUIDADO</h1>
+        <p class="slide-sub">Productos de Limpieza y Cuidado Automotriz</p>
+        <span class="slide-badge">✦ Catálogo <span id="year-catalogo"></span> ✦</span>
       </div>
     </div>
-  </div>
-  <div class="slide" style="background:linear-gradient(135deg,rgba(10,32,80,0.88),rgba(30,100,30,0.5)), url('assets/img/producto_15.png') center/cover no-repeat;">
-    <div class="slide-content">
-      <div class="slide-icon" style="background:linear-gradient(135deg,#8DC63F,#558b2f)"><i class="fa fa-broom"></i></div>
-      <h2 class="slide-title2">Artículos de<br>Limpieza</h2>
-      <p class="slide-sub">Microfibra, trapos, guantes, escobillas y más</p>
-      <div class="slide-prods">
-        <span><i class="fa fa-check-circle me-1"></i>Microfibra 70x40</span>
-        <span><i class="fa fa-check-circle me-1"></i>Microfibra 30x30</span>
-        <span><i class="fa fa-check-circle me-1"></i>Guantes S/M</span>
-        <span><i class="fa fa-check-circle me-1"></i>Trapeador</span>
-      </div>
-    </div>
-  </div>
-  <div class="slide" style="background:linear-gradient(135deg,rgba(10,32,80,0.88),rgba(180,20,20,0.45)), url('assets/img/producto_14.png') center/cover no-repeat;">
-    <div class="slide-content">
-      <div class="slide-icon" style="background:linear-gradient(135deg,#e53935,#b71c1c)"><i class="fa fa-car"></i></div>
-      <h2 class="slide-title2">Shampoo<br>Automotriz</h2>
-      <p class="slide-sub">Limpieza profunda con brillo concentrado para tu auto y moto</p>
-      <div class="slide-prods">
-        <span><i class="fa fa-check-circle me-1"></i>Manzana Verde</span>
-        <span><i class="fa fa-check-circle me-1"></i>New Car</span>
-        <span><i class="fa fa-check-circle me-1"></i>Fresa</span>
-        <span><i class="fa fa-check-circle me-1"></i>Desde S/ 4.00</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Controles -->
-  <button class="slider-prev" onclick="moverSlide(-1)"><i class="fa fa-chevron-left"></i></button>
-  <button class="slider-next" onclick="moverSlide(1)"><i class="fa fa-chevron-right"></i></button>
-
-  <!-- Dots -->
-  <div class="slider-dots">
-    <span class="dot active" onclick="irSlide(0)"></span>
-    <span class="dot" onclick="irSlide(1)"></span>
-    <span class="dot" onclick="irSlide(2)"></span>
-    <span class="dot" onclick="irSlide(3)"></span>
-  </div>
-
-  <!-- Stats bar -->
-  <div class="hero-stats-bar">
-    <div class="stat-item"><span class="sn">17</span><span class="sl">Productos</span></div>
-    <div class="stat-div"></div>
-    <div class="stat-item"><span class="sn">3</span><span class="sl">Categorías</span></div>
-    <div class="stat-div"></div>
-    <div class="stat-item"><span class="sn">S/ 1.00</span><span class="sl">Desde</span></div>
-  </div>
-</section>
-
-<!-- ══ NAV CATEGORÍAS ════════════════════════════════ -->
-<nav class="nav-cats">
-  <div class="container d-flex gap-0" style="overflow-x:auto; flex-wrap:nowrap; scrollbar-width:none; -ms-overflow-style:none;">
-    <button class="btn-cat active" onclick="irA('ambientadores',this)">
-      <i class="fa fa-wind me-1"></i>Ambientadores
-    </button>
-    <button class="btn-cat" onclick="irA('siliconas',this)">
-      <i class="fa fa-star me-1"></i>Siliconas
-    </button>
-    <button class="btn-cat" onclick="irA('limpieza',this)">
-      <i class="fa fa-broom me-1"></i>Limpieza
-    </button>
-  </div>
-</nav>
-
-<!-- ══ MAIN ══════════════════════════════════════════ -->
-<main>
-<div class="container">
-
-  <!-- ── AMBIENTADORES ── -->
-  <div id="ambientadores" class="sec-title">
-    <h2><span class="icon-sec"><i class="fa fa-wind"></i></span>Ambientadores</h2>
-  </div>
-  <div class="row g-4 mb-5">
-
-    <!-- GiGi Cherry -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="GiGi Cherry">
-        <div class="card-img-wrap">
-          <span class="card-badge">Ambientador</span>
-          <img src="assets/img/producto_02.jpeg" alt="GiGi Cherry">
+    <div class="slide"
+      style="background:linear-gradient(135deg,rgba(10,32,80,0.88),rgba(141,198,63,0.4)), url('assets/img/producto_09.png') center/cover no-repeat;">
+      <div class="slide-content">
+        <div class="slide-icon"><i class="fa fa-star"></i></div>
+        <h2 class="slide-title2">Siliconas &amp;<br>Ambientadores</h2>
+        <p class="slide-sub">Brillo total para tu auto. Fragancias únicas y duraderas</p>
+        <div class="slide-prods">
+          <span><i class="fa fa-check-circle me-1"></i>Brillo Total</span>
+          <span><i class="fa fa-check-circle me-1"></i>New Car</span>
+          <span><i class="fa fa-check-circle me-1"></i>Chicle</span>
+          <span><i class="fa fa-check-circle me-1"></i>Fresa</span>
         </div>
-        <div class="card-body-custom">
-          <h5>GiGi Cherry</h5>
-          <div class="frag-chips">
-            <span class="frag-chip">Fresa</span><span class="frag-chip">Cherry</span>
-            <span class="frag-chip">New Car</span><span class="frag-chip">Vainilla</span>
-            <span class="frag-chip">Chocolate</span><span class="frag-chip">Uva</span>
-          </div>
-          <p>Ambientador de larga duración. Fragancia intensa para auto, habitación y oficina.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 2.00</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">Docena</span>
-              <span class="price-val offer">S/ 18.00</span>
-            </div>
-          </div>
+      </div>
+    </div>
+    <div class="slide"
+      style="background:linear-gradient(135deg,rgba(10,32,80,0.88),rgba(30,100,30,0.5)), url('assets/img/producto_15.png') center/cover no-repeat;">
+      <div class="slide-content">
+        <div class="slide-icon" style="background:linear-gradient(135deg,#8DC63F,#558b2f)"><i class="fa fa-broom"></i>
+        </div>
+        <h2 class="slide-title2">Artículos de<br>Limpieza</h2>
+        <p class="slide-sub">Microfibra, trapos, guantes, escobillas y más</p>
+        <div class="slide-prods">
+          <span><i class="fa fa-check-circle me-1"></i>Microfibra 70x40</span>
+          <span><i class="fa fa-check-circle me-1"></i>Microfibra 30x30</span>
+          <span><i class="fa fa-check-circle me-1"></i>Guantes S/M</span>
+          <span><i class="fa fa-check-circle me-1"></i>Trapeador</span>
+        </div>
+      </div>
+    </div>
+    <div class="slide"
+      style="background:linear-gradient(135deg,rgba(10,32,80,0.88),rgba(180,20,20,0.45)), url('assets/img/producto_14.png') center/cover no-repeat;">
+      <div class="slide-content">
+        <div class="slide-icon" style="background:linear-gradient(135deg,#e53935,#b71c1c)"><i class="fa fa-car"></i>
+        </div>
+        <h2 class="slide-title2">Shampoo<br>Automotriz</h2>
+        <p class="slide-sub">Limpieza profunda con brillo concentrado para tu auto y moto</p>
+        <div class="slide-prods">
+          <span><i class="fa fa-check-circle me-1"></i>Manzana Verde</span>
+          <span><i class="fa fa-check-circle me-1"></i>New Car</span>
+          <span><i class="fa fa-check-circle me-1"></i>Fresa</span>
+          <span><i class="fa fa-check-circle me-1"></i>Desde S/ 4.00</span>
         </div>
       </div>
     </div>
 
-    <!-- Toricto Bubble Gum -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Toricto Bubble Gum">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9)">
-          <span class="card-badge">Celulosa</span>
-          <img src="assets/img/producto_03.jpeg" alt="Toricto Bubble Gum">
-        </div>
-        <div class="card-body-custom">
-          <h5>Toricto Bubble Gum</h5>
-          <div class="frag-chips">
-            <span class="frag-chip" style="background:linear-gradient(135deg,#2e7d32,#388e3c)">Chicle</span>
-          </div>
-          <p>Ambientador de celulosa con fragancia natural a chicle. Larga duración.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 1.00</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">Docena</span>
-              <span class="price-val offer">S/ 9.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Controles -->
+    <button class="slider-prev" onclick="moverSlide(-1)"><i class="fa fa-chevron-left"></i></button>
+    <button class="slider-next" onclick="moverSlide(1)"><i class="fa fa-chevron-right"></i></button>
+
+    <!-- Dots -->
+    <div class="slider-dots">
+      <span class="dot active" onclick="irSlide(0)"></span>
+      <span class="dot" onclick="irSlide(1)"></span>
+      <span class="dot" onclick="irSlide(2)"></span>
+      <span class="dot" onclick="irSlide(3)"></span>
     </div>
 
-    <!-- Toricto Cherry -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Toricto Cherry">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0)">
-          <span class="card-badge">Celulosa</span>
-          <img src="assets/img/producto_04.jpeg" alt="Toricto Cherry">
-        </div>
-        <div class="card-body-custom">
-          <h5>Toricto Cherry</h5>
-          <div class="frag-chips">
-            <span class="frag-chip" style="background:linear-gradient(135deg,#c2185b,#e91e63)">Cherry</span>
-          </div>
-          <p>Ambientador de celulosa con fragancia natural a cereza. Larga duración.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 1.00</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">Docena</span>
-              <span class="price-val offer">S/ 9.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Stats bar -->
+    <div class="hero-stats-bar">
+      <div class="stat-item"><span class="sn">17</span><span class="sl">Productos</span></div>
+      <div class="stat-div"></div>
+      <div class="stat-item"><span class="sn">3</span><span class="sl">Categorías</span></div>
+      <div class="stat-div"></div>
+      <div class="stat-item"><span class="sn">S/ 1.00</span><span class="sl">Desde</span></div>
     </div>
+  </section>
 
-    <!-- Speed Racer -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Speed Racer — Perfumador de Coche">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb)">
-          <span class="card-badge">Spray</span>
-          <img src="assets/img/producto_06.png" alt="Speed Racer">
-        </div>
-        <div class="card-body-custom">
-          <h5>Speed Racer — Perfumador de Coche</h5>
-          <div class="frag-chips">
-            <span class="frag-chip">Manzana</span><span class="frag-chip">Pasión</span>
-            <span class="frag-chip">Fresa</span><span class="frag-chip">Uva</span>
-            <span class="frag-chip">Naranja</span><span class="frag-chip">New Car</span>
-          </div>
-          <p>Perfumador en spray de larga duración para coche. Fragancia intensa.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 5.00</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">3 a más c/u</span>
-              <span class="price-val offer">S/ 10.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- ══ NAV CATEGORÍAS ════════════════════════════════ -->
+  <nav class="nav-cats">
+    <div class="container d-flex gap-0"
+      style="overflow-x:auto; flex-wrap:nowrap; scrollbar-width:none; -ms-overflow-style:none;">
+      <button class="btn-cat active" onclick="irA('ambientadores',this)">
+        <i class="fa fa-wind me-1"></i>Ambientadores
+      </button>
+      <button class="btn-cat" onclick="irA('siliconas',this)">
+        <i class="fa fa-star me-1"></i>Siliconas
+      </button>
+      <button class="btn-cat" onclick="irA('limpieza',this)">
+        <i class="fa fa-broom me-1"></i>Limpieza
+      </button>
     </div>
+  </nav>
 
-  </div><!-- /row ambientadores -->
+  <!-- ══ MAIN ══════════════════════════════════════════ -->
+  <main>
+    <div class="container">
 
-  <!-- ── SILICONAS ── -->
-  <div id="siliconas" class="sec-title">
-    <h2><span class="icon-sec" style="background:linear-gradient(135deg,var(--azul),#0d47a1)"><i class="fa fa-star"></i></span>Siliconas</h2>
-  </div>
-  <div class="row g-4 mb-5">
-
-    <!-- Frasco Silicona -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Frasco de Silicona">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#fff8e1,#fff3cd)">
-          <span class="card-badge">Silicona</span>
-          <img src="assets/img/producto_07.png" alt="Frasco Silicona">
-        </div>
-        <div class="card-body-custom">
-          <h5>Frasco de Silicona</h5>
-          <div class="frag-chips">
-            <span class="frag-chip">Limón</span><span class="frag-chip">Fresa</span>
-            <span class="frag-chip">Cereza</span><span class="frag-chip">Uva</span>
-            <span class="frag-chip">New Car</span><span class="frag-chip">Manzana</span>
-            <span class="frag-chip">Chicle</span>
-          </div>
-          <p>Silicona líquida en frasco con variedad de fragancias.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 5.00</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">3 a más c/u</span>
-              <span class="price-val offer">S/ 12.50</span>
-            </div>
-          </div>
-        </div>
+      <!-- ── AMBIENTADORES ── -->
+      <div id="ambientadores" class="sec-title">
+        <h2><span class="icon-sec"><i class="fa fa-wind"></i></span>Ambientadores</h2>
       </div>
-    </div>
+      <div class="row g-4 mb-5">
 
-    <!-- Silicona Cojín -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Toricto Brillo Total (Almohadita)">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0)">
-          <span class="card-badge">Almohadita</span>
-          <img src="assets/img/producto_08.png" alt="Silicona Cojin">
-        </div>
-        <div class="card-body-custom">
-          <h5>Toricto Brillo Total (Almohadita)</h5>
-          <div class="frag-chips">
-            <span class="frag-chip">Fresa</span><span class="frag-chip">New Car</span>
-            <span class="frag-chip">Chicle</span><span class="frag-chip">Brillo Llanta</span>
-          </div>
-          <p>Tablero, cuero, caucho, plástico, madera, vidrio, TV, computadora y vinil.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 1.00</span>
+        <!-- GiGi Cherry -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="GiGi Cherry">
+            <div class="card-img-wrap">
+              <span class="card-badge">Ambientador</span>
+              <img src="assets/img/producto_02.jpeg" alt="GiGi Cherry">
             </div>
-            <div class="price-item">
-              <span class="price-label">Docena</span>
-              <span class="price-val offer">S/ 10.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Silicona Spray -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Silicona con Atomizador">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#e8f5e9,#dcedc8)">
-          <span class="card-badge">Spray</span>
-          <img src="assets/img/producto_01_2.png" alt="Silicona Spray">
-        </div>
-        <div class="card-body-custom">
-          <h5>Silicona con Atomizador</h5>
-          <p>Renovador y protector de superficies con atomizador. Variedad de fragancias disponibles.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 6.50</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">3 a más c/u</span>
-              <span class="price-val offer">S/ 13.50</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Provecar -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Provecar Silicon Full Fragance">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#fafafa,#eeeeee)">
-          <span class="card-badge">Premium</span>
-          <img src="assets/img/producto_10.png" alt="Provecar">
-        </div>
-        <div class="card-body-custom">
-          <h5>Provecar Silicon Full Fragance</h5>
-          <p>Cuero, vinil, caucho, plástico. Full brillo. Fragancias: chicle y más.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 10.00</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">Docena</span>
-              <span class="price-val offer">S/ 95.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Silicona Galonera -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Silicona Líquida — Galonera 5L">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#fce4ec,#fce4ec)">
-          <span class="card-badge">Galonera</span>
-          <img src="assets/img/producto_11.png" alt="Silicona Galonera">
-        </div>
-        <div class="card-body-custom">
-          <h5>Silicona Líquida — Galonera</h5>
-          <p>Renovador premium para vinilo, caucho y plásticos. Interiores y exteriores.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Galonera (5L)</span>
-              <span class="price-val">S/ 28.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Silicona Brillo -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Silicona Brillo Total — 1 Litro">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2)">
-          <span class="card-badge">1 Litro</span>
-          <img src="assets/img/producto_12.png" alt="Silicona Brillo">
-        </div>
-        <div class="card-body-custom">
-          <h5>Silicona Brillo Total — 1 Litro</h5>
-          <p>Tablero, puertas, consola. Brillo intenso y duradero para todo el interior.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Litro</span>
-              <span class="price-val">S/ 12.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div><!-- /row siliconas -->
-
-  <!-- ── LIMPIEZA ── -->
-  <div id="limpieza" class="sec-title">
-    <h2><span class="icon-sec" style="background:linear-gradient(135deg,var(--verde),#558b2f)"><i class="fa fa-broom"></i></span>Artículos de Limpieza</h2>
-  </div>
-  <div class="row g-4 mb-5">
-
-    <!-- Escobilla -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Escobilla de Limpieza">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#f3e5f5,#e1bee7)">
-          <span class="card-badge">Limpieza</span>
-          <img src="assets/img/producto_13.png" alt="Escobilla">
-        </div>
-        <div class="card-body-custom">
-          <h5>Escobilla de Limpieza</h5>
-          <p>Mango ergonómico antideslizante. Cerdas resistentes. Ideal para hogar y auto.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 4.00</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">Docena</span>
-              <span class="price-val offer">S/ 22.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Shampoo Auto -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Shampoo para Auto/Moto">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb)">
-          <span class="card-badge">Automotriz</span>
-          <img src="assets/img/escobilla.png" alt="Shampoo Auto">
-        </div>
-        <div class="card-body-custom">
-          <h5>Shampoo para Auto/Moto</h5>
-          <div class="frag-chips">
-            <span class="frag-chip" style="background:linear-gradient(135deg,#388e3c,#2e7d32)">Manzana Verde</span>
-            <span class="frag-chip" style="background:linear-gradient(135deg,#1565c0,#0d47a1)">New Car</span>
-            <span class="frag-chip" style="background:linear-gradient(135deg,#c2185b,#880e4f)">Fresa</span>
-          </div>
-          <p>Con brillo concentrado. Limpieza profunda para autos y motos.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Frasco</span>
-              <span class="price-val">S/ 4.00</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">Litro</span>
-              <span class="price-val offer">S/ 15.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Shampoo 1 Litro -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Shampoo Automotriz 1 Litro">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2)">
-          <span class="card-badge">1 Litro</span>
-          <img src="assets/img/producto_05.png" alt="Shampoo Automotriz 1 Litro">
-        </div>
-        <div class="card-body-custom">
-          <h5>Shampoo Automotriz 1 Litro</h5>
-          <p>Limpieza profunda con brillo concentrado. Rinde para múltiples lavadas. Para auto y moto.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Litro</span>
-              <span class="price-val">S/ 15.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Microfibra 70x40 -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Trapo de Microfibra 70x40 cm">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#e8f5e9,#dcedc8)">
-          <span class="card-badge">70x40 cm</span>
-          <img src="assets/img/producto_02.png" alt="Microfibra 70x40">
-        </div>
-        <div class="card-body-custom">
-          <h5>Trapo de Microfibra 70x40 cm</h5>
-          <p>Alta absorción. Colores variados. Ideal para limpieza de auto, moto y hogar.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 5.00</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">Docena</span>
-              <span class="price-val offer">S/ 37.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Microfibra 30x30 -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Trapo de Microfibra 30x30 cm">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#f9fbe7,#f0f4c3)">
-          <span class="card-badge">30x30 cm</span>
-          <img src="assets/img/producto_16.png" alt="Microfibra 30x30">
-        </div>
-        <div class="card-body-custom">
-          <h5>Trapo de Microfibra 30x30 cm</h5>
-          <p>Ideal para limpieza y pulido. Colores variados. Producto peruano.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 2.50</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">Docena</span>
-              <span class="price-val offer">S/ 20.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Trapeador -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Trapeador de Yute 58x39 cm">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#eceff1,#cfd8dc)">
-          <span class="card-badge">58x39 cm</span>
-          <img src="assets/img/producto_17.png" alt="Trapeador">
-        </div>
-        <div class="card-body-custom">
-          <h5>Trapeador de Yute 58x39 cm</h5>
-          <p>Ultra-Clean Pro. Alta absorción. Ideal para pisos y superficies grandes.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 2.50</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">Docena</span>
-              <span class="price-val offer">S/ 20.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Guantes -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="prod-card" data-nombre="Guantes Household Gloves">
-        <div class="card-img-wrap" style="background:linear-gradient(135deg,#e8eaf6,#c5cae9)">
-          <span class="card-badge">Tallas S y M</span>
-          <img src="assets/img/producto_18.png" alt="Guantes">
-        </div>
-        <div class="card-body-custom">
-          <h5>Guantes Household Gloves</h5>
-          <p>Tallas S y M. Flock lined, interior suave. Colores variados. Paquete x 12 unidades.</p>
-          <div class="price-row">
-            <div class="price-item">
-              <span class="price-label">Unidad</span>
-              <span class="price-val">S/ 5.00</span>
-            </div>
-            <div class="price-item">
-              <span class="price-label">Docena (paquete)</span>
-              <span class="price-val offer">S/ 40.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div><!-- /row limpieza -->
-
-</div><!-- /container -->
-</main>
-
-<!-- ══ UBICACIÓN ════════════════════════════════════ -->
-<section class="ubicacion-sec">
-  <div class="container-fluid p-0">
-    <div class="row g-0 align-items-stretch">
-
-      <!-- Panel izquierdo: Info -->
-      <div class="col-lg-5 col-md-6 d-flex">
-        <div class="donde-info-panel w-100">
-
-          <div class="donde-pin-wrap">
-            <div class="donde-pin-outer">
-              <div class="donde-pin">
-                <i class="fa fa-map-marker-alt"></i>
+            <div class="card-body-custom">
+              <h5>GiGi Cherry</h5>
+              <div class="frag-chips">
+                <span class="frag-chip">Fresa</span><span class="frag-chip">Cherry</span>
+                <span class="frag-chip">New Car</span><span class="frag-chip">Vainilla</span>
+                <span class="frag-chip">Chocolate</span><span class="frag-chip">Uva</span>
+              </div>
+              <p>Ambientador de larga duración. Fragancia intensa para auto, habitación y oficina.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 2.00</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">Docena</span>
+                  <span class="price-val offer">S/ 18.00</span>
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="donde-pre">📍 ¡Visítanos!</div>
-          <h2 class="donde-titulo">¿Dónde nos<br><span>encontramos?</span></h2>
-          <p class="donde-sub">
-            Estamos en <strong>Hualmay, Lima — Perú</strong><br>
-            Búscanos en Google Maps como <strong>"Luna Auto Cuidado"</strong>
-          </p>
-
-          <div class="donde-items">
-            <div class="ub-item">
-              <div class="ub-icon"><i class="fa fa-map-marker-alt"></i></div>
-              <div>
-                <div class="ub-label">Dirección</div>
-                <div class="ub-val-white">Hualmay, Lima — Perú</div>
-              </div>
+        <!-- Toricto Bubble Gum -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Toricto Bubble Gum">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9)">
+              <span class="card-badge">Celulosa</span>
+              <img src="assets/img/producto_03.jpeg" alt="Toricto Bubble Gum">
             </div>
-            <a href="https://wa.me/51989656783?text=Hola!%20Quiero%20información%20sobre%20sus%20productos%20🛒" target="_blank" class="ub-item-link">
-              <div class="ub-icon" style="background:linear-gradient(135deg,#25D366,#128C7E)">
-                <i class="fab fa-whatsapp"></i>
+            <div class="card-body-custom">
+              <h5>Toricto Bubble Gum</h5>
+              <div class="frag-chips">
+                <span class="frag-chip" style="background:linear-gradient(135deg,#2e7d32,#388e3c)">Chicle</span>
               </div>
-              <div>
-                <div class="ub-label">WhatsApp</div>
-                <div class="ub-val-white">Escríbenos para coordinar</div>
-              </div>
-            </a>
-            <div class="ub-item">
-              <div class="ub-icon" style="background:linear-gradient(135deg,#8DC63F,#558b2f)">
-                <i class="fa fa-clock"></i>
-              </div>
-              <div>
-                <div class="ub-label">Atención</div>
-                <div class="ub-val-white">Lun – Sáb: 9:00 am – 6:00 pm<br>Dom: 9:00 am – 12:00 pm</div>
+              <p>Ambientador de celulosa con fragancia natural a chicle. Larga duración.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 1.00</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">Docena</span>
+                  <span class="price-val offer">S/ 9.00</span>
+                </div>
               </div>
             </div>
           </div>
-
-          <button type="button" onclick="window.open('https://maps.app.goo.gl/wWxgpBVd1ZTBi4np6','_blank')" class="btn rounded-pill donde-btn">
-            <i class="fa fa-directions me-2"></i>Abrir en Google Maps
-          </button>
-
         </div>
-      </div>
 
-      <!-- Panel derecho: Mapa -->
-      <div class="col-lg-7 col-md-6 d-flex">
-        <div class="mapa-wrap w-100">
-          <iframe
-            src="https://maps.google.com/maps?q=Luna+Auto+Cuidado+Hualmay+Lima+Peru&output=embed&z=17"
-            width="100%" height="100%"
-            style="border:0; display:block; min-height:450px;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+        <!-- Toricto Cherry -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Toricto Cherry">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0)">
+              <span class="card-badge">Celulosa</span>
+              <img src="assets/img/producto_04.jpeg" alt="Toricto Cherry">
+            </div>
+            <div class="card-body-custom">
+              <h5>Toricto Cherry</h5>
+              <div class="frag-chips">
+                <span class="frag-chip" style="background:linear-gradient(135deg,#c2185b,#e91e63)">Cherry</span>
+              </div>
+              <p>Ambientador de celulosa con fragancia natural a cereza. Larga duración.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 1.00</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">Docena</span>
+                  <span class="price-val offer">S/ 9.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
+        <!-- Speed Racer -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Speed Racer — Perfumador de Coche">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb)">
+              <span class="card-badge">Spray</span>
+              <img src="assets/img/producto_06.png" alt="Speed Racer">
+            </div>
+            <div class="card-body-custom">
+              <h5>Speed Racer — Perfumador de Coche</h5>
+              <div class="frag-chips">
+                <span class="frag-chip">Manzana</span><span class="frag-chip">Pasión</span>
+                <span class="frag-chip">Fresa</span><span class="frag-chip">Uva</span>
+                <span class="frag-chip">Naranja</span><span class="frag-chip">New Car</span>
+              </div>
+              <p>Perfumador en spray de larga duración para coche. Fragancia intensa.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 5.00</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">3 a más c/u</span>
+                  <span class="price-val offer">S/ 10.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row ambientadores -->
+
+      <!-- ── SILICONAS ── -->
+      <div id="siliconas" class="sec-title">
+        <h2><span class="icon-sec" style="background:linear-gradient(135deg,var(--azul),#0d47a1)"><i
+              class="fa fa-star"></i></span>Siliconas</h2>
+      </div>
+      <div class="row g-4 mb-5">
+
+        <!-- Frasco Silicona -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Frasco de Silicona">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#fff8e1,#fff3cd)">
+              <span class="card-badge">Silicona</span>
+              <img src="assets/img/producto_07.png" alt="Frasco Silicona">
+            </div>
+            <div class="card-body-custom">
+              <h5>Frasco de Silicona</h5>
+              <div class="frag-chips">
+                <span class="frag-chip">Limón</span><span class="frag-chip">Fresa</span>
+                <span class="frag-chip">Cereza</span><span class="frag-chip">Uva</span>
+                <span class="frag-chip">New Car</span><span class="frag-chip">Manzana</span>
+                <span class="frag-chip">Chicle</span>
+              </div>
+              <p>Silicona líquida en frasco con variedad de fragancias.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 5.00</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">3 a más c/u</span>
+                  <span class="price-val offer">S/ 12.50</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Silicona Cojín -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Toricto Brillo Total (Almohadita)">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0)">
+              <span class="card-badge">Almohadita</span>
+              <img src="assets/img/producto_08.png" alt="Silicona Cojin">
+            </div>
+            <div class="card-body-custom">
+              <h5>Toricto Brillo Total (Almohadita)</h5>
+              <div class="frag-chips">
+                <span class="frag-chip">Fresa</span><span class="frag-chip">New Car</span>
+                <span class="frag-chip">Chicle</span><span class="frag-chip">Brillo Llanta</span>
+              </div>
+              <p>Tablero, cuero, caucho, plástico, madera, vidrio, TV, computadora y vinil.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 1.00</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">Docena</span>
+                  <span class="price-val offer">S/ 10.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Silicona Spray -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Silicona con Atomizador">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#e8f5e9,#dcedc8)">
+              <span class="card-badge">Spray</span>
+              <img src="assets/img/producto_01_2.png" alt="Silicona Spray">
+            </div>
+            <div class="card-body-custom">
+              <h5>Silicona con Atomizador</h5>
+              <p>Renovador y protector de superficies con atomizador. Variedad de fragancias disponibles.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 6.50</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">3 a más c/u</span>
+                  <span class="price-val offer">S/ 13.50</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Provecar -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Provecar Silicon Full Fragance">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#fafafa,#eeeeee)">
+              <span class="card-badge">Premium</span>
+              <img src="assets/img/producto_10.png" alt="Provecar">
+            </div>
+            <div class="card-body-custom">
+              <h5>Provecar Silicon Full Fragance</h5>
+              <p>Cuero, vinil, caucho, plástico. Full brillo. Fragancias: chicle y más.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 10.00</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">Docena</span>
+                  <span class="price-val offer">S/ 95.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Silicona Galonera -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Silicona Líquida — Galonera 5L">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#fce4ec,#fce4ec)">
+              <span class="card-badge">Galonera</span>
+              <img src="assets/img/producto_11.png" alt="Silicona Galonera">
+            </div>
+            <div class="card-body-custom">
+              <h5>Silicona Líquida — Galonera</h5>
+              <p>Renovador premium para vinilo, caucho y plásticos. Interiores y exteriores.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Galonera (5L)</span>
+                  <span class="price-val">S/ 28.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Silicona Brillo -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Silicona Brillo Total — 1 Litro">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2)">
+              <span class="card-badge">1 Litro</span>
+              <img src="assets/img/producto_12.png" alt="Silicona Brillo">
+            </div>
+            <div class="card-body-custom">
+              <h5>Silicona Brillo Total — 1 Litro</h5>
+              <p>Tablero, puertas, consola. Brillo intenso y duradero para todo el interior.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Litro</span>
+                  <span class="price-val">S/ 12.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row siliconas -->
+
+      <!-- ── LIMPIEZA ── -->
+      <div id="limpieza" class="sec-title">
+        <h2><span class="icon-sec" style="background:linear-gradient(135deg,var(--verde),#558b2f)"><i
+              class="fa fa-broom"></i></span>Artículos de Limpieza</h2>
+      </div>
+      <div class="row g-4 mb-5">
+
+        <!-- Escobilla -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Escobilla de Limpieza">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#f3e5f5,#e1bee7)">
+              <span class="card-badge">Limpieza</span>
+              <img src="assets/img/producto_13.png" alt="Escobilla">
+            </div>
+            <div class="card-body-custom">
+              <h5>Escobilla de Limpieza</h5>
+              <p>Mango ergonómico antideslizante. Cerdas resistentes. Ideal para hogar y auto.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 4.00</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">Docena</span>
+                  <span class="price-val offer">S/ 22.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shampoo Auto -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Shampoo para Auto/Moto">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb)">
+              <span class="card-badge">Automotriz</span>
+              <img src="assets/img/escobilla.png" alt="Shampoo Auto">
+            </div>
+            <div class="card-body-custom">
+              <h5>Shampoo para Auto/Moto</h5>
+              <div class="frag-chips">
+                <span class="frag-chip" style="background:linear-gradient(135deg,#388e3c,#2e7d32)">Manzana Verde</span>
+                <span class="frag-chip" style="background:linear-gradient(135deg,#1565c0,#0d47a1)">New Car</span>
+                <span class="frag-chip" style="background:linear-gradient(135deg,#c2185b,#880e4f)">Fresa</span>
+              </div>
+              <p>Con brillo concentrado. Limpieza profunda para autos y motos.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Frasco</span>
+                  <span class="price-val">S/ 4.00</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">Litro</span>
+                  <span class="price-val offer">S/ 15.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shampoo 1 Litro -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Shampoo Automotriz 1 Litro">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2)">
+              <span class="card-badge">1 Litro</span>
+              <img src="assets/img/producto_05.png" alt="Shampoo Automotriz 1 Litro">
+            </div>
+            <div class="card-body-custom">
+              <h5>Shampoo Automotriz 1 Litro</h5>
+              <p>Limpieza profunda con brillo concentrado. Rinde para múltiples lavadas. Para auto y moto.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Litro</span>
+                  <span class="price-val">S/ 15.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Microfibra 70x40 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Trapo de Microfibra 70x40 cm">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#e8f5e9,#dcedc8)">
+              <span class="card-badge">70x40 cm</span>
+              <img src="assets/img/producto_02.png" alt="Microfibra 70x40">
+            </div>
+            <div class="card-body-custom">
+              <h5>Trapo de Microfibra 70x40 cm</h5>
+              <p>Alta absorción. Colores variados. Ideal para limpieza de auto, moto y hogar.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 5.00</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">Docena</span>
+                  <span class="price-val offer">S/ 37.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Microfibra 30x30 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Trapo de Microfibra 30x30 cm">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#f9fbe7,#f0f4c3)">
+              <span class="card-badge">30x30 cm</span>
+              <img src="assets/img/producto_16.png" alt="Microfibra 30x30">
+            </div>
+            <div class="card-body-custom">
+              <h5>Trapo de Microfibra 30x30 cm</h5>
+              <p>Ideal para limpieza y pulido. Colores variados. Producto peruano.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 2.50</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">Docena</span>
+                  <span class="price-val offer">S/ 20.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trapeador -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Trapeador de Yute 58x39 cm">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#eceff1,#cfd8dc)">
+              <span class="card-badge">58x39 cm</span>
+              <img src="assets/img/producto_17.png" alt="Trapeador">
+            </div>
+            <div class="card-body-custom">
+              <h5>Trapeador de Yute 58x39 cm</h5>
+              <p>Ultra-Clean Pro. Alta absorción. Ideal para pisos y superficies grandes.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 2.50</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">Docena</span>
+                  <span class="price-val offer">S/ 20.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guantes -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="prod-card" data-nombre="Guantes Household Gloves">
+            <div class="card-img-wrap" style="background:linear-gradient(135deg,#e8eaf6,#c5cae9)">
+              <span class="card-badge">Tallas S y M</span>
+              <img src="assets/img/producto_18.png" alt="Guantes">
+            </div>
+            <div class="card-body-custom">
+              <h5>Guantes Household Gloves</h5>
+              <p>Tallas S y M. Flock lined, interior suave. Colores variados. Paquete x 12 unidades.</p>
+              <div class="price-row">
+                <div class="price-item">
+                  <span class="price-label">Unidad</span>
+                  <span class="price-val">S/ 5.00</span>
+                </div>
+                <div class="price-item">
+                  <span class="price-label">Docena (paquete)</span>
+                  <span class="price-val offer">S/ 40.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row limpieza -->
+
+    </div><!-- /container -->
+  </main>
+
+  <!-- ══ UBICACIÓN ════════════════════════════════════ -->
+  <section class="ubicacion-sec">
+    <div class="container-fluid p-0">
+      <div class="row g-0 align-items-stretch">
+
+        <!-- Panel izquierdo: Info -->
+        <div class="col-lg-5 col-md-6 d-flex">
+          <div class="donde-info-panel w-100">
+
+            <div class="donde-pin-wrap">
+              <div class="donde-pin-outer">
+                <div class="donde-pin">
+                  <i class="fa fa-map-marker-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="donde-pre">📍 ¡Visítanos!</div>
+            <h2 class="donde-titulo">¿Dónde nos<br><span>encontramos?</span></h2>
+            <p class="donde-sub">
+              Estamos en <strong>Hualmay, Lima — Perú</strong><br>
+              Búscanos en Google Maps como <strong>"Luna Auto Cuidado"</strong>
+            </p>
+
+            <div class="donde-items">
+              <div class="ub-item">
+                <div class="ub-icon"><i class="fa fa-map-marker-alt"></i></div>
+                <div>
+                  <div class="ub-label">Dirección</div>
+                  <div class="ub-val-white">Hualmay, Lima — Perú</div>
+                </div>
+              </div>
+              <a href="https://wa.me/51989656783?text=Hola!%20Quiero%20información%20sobre%20sus%20productos%20🛒"
+                target="_blank" class="ub-item-link">
+                <div class="ub-icon" style="background:linear-gradient(135deg,#25D366,#128C7E)">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div>
+                  <div class="ub-label">WhatsApp</div>
+                  <div class="ub-val-white">Escríbenos para coordinar</div>
+                </div>
+              </a>
+              <div class="ub-item">
+                <div class="ub-icon" style="background:linear-gradient(135deg,#8DC63F,#558b2f)">
+                  <i class="fa fa-clock"></i>
+                </div>
+                <div>
+                  <div class="ub-label">Atención</div>
+                  <div class="ub-val-white">Lun – Sáb: 9:00 am – 6:00 pm<br>Dom: 9:00 am – 12:00 pm</div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" onclick="window.open('https://maps.app.goo.gl/wWxgpBVd1ZTBi4np6','_blank')"
+              class="btn rounded-pill donde-btn">
+              <i class="fa fa-directions me-2"></i>Abrir en Google Maps
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Panel derecho: Mapa -->
+        <div class="col-lg-7 col-md-6 d-flex">
+          <div class="mapa-wrap w-100">
+            <iframe src="https://maps.google.com/maps?q=Luna+Auto+Cuidado+Hualmay+Lima+Peru&output=embed&z=17"
+              width="100%" height="100%" style="border:0; display:block; min-height:450px;" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ══ FOOTER ══════════════════════════════════════════ -->
-<footer>
-  <div class="container">
-    <div class="row g-4 align-items-center">
-      <div class="col-md-3 text-center">
-        <img src="assets/img/logo.png" alt="Luna Auto Cuidado" class="footer-logo mb-3">
-        <h4>LUNA AUTO CUIDADO</h4>
-        <p style="font-size:.85rem; color:rgba(255,255,255,0.5); margin-top:6px;">Productos de Limpieza y Cuidado Automotriz</p>
-      </div>
-      <div class="col-md-4">
-        <h6 style="color:var(--turq); font-weight:800; letter-spacing:2px; font-size:.8rem; margin-bottom:16px;">CONTÁCTANOS</h6>
-        <div class="contact-item"><i class="fa fa-map-marker-alt"></i> Hualmay, Lima — Perú</div>
-        <div class="contact-item"><i class="fab fa-whatsapp"></i> WhatsApp disponible</div>
-        <div class="contact-item"><a href="https://maps.app.goo.gl/wWxgpBVd1ZTBi4np6" target="_blank" style="color:inherit;text-decoration:none"><i class="fab fa-google"></i> Ver en Google Maps</a></div>
-      </div>
-      <div class="col-md-5">
-        <h6 style="color:var(--turq); font-weight:800; letter-spacing:2px; font-size:.8rem; margin-bottom:16px;">NUESTROS PRODUCTOS</h6>
-        <div class="row g-2">
-          <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i class="fa fa-wind me-1" style="color:var(--turq)"></i>Ambientadores</span></div>
-          <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i class="fa fa-star me-1" style="color:var(--turq)"></i>Siliconas</span></div>
-          <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i class="fa fa-broom me-1" style="color:var(--verde)"></i>Limpieza</span></div>
-          <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i class="fa fa-spray-can me-1" style="color:var(--verde)"></i>Shampoo Auto</span></div>
-          <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i class="fa fa-tshirt me-1" style="color:var(--verde)"></i>Microfibra</span></div>
-          <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i class="fa fa-hand-paper me-1" style="color:var(--verde)"></i>Guantes</span></div>
+  <!-- ══ FOOTER ══════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-3 text-center">
+          <img src="assets/img/logo.png" alt="Luna Auto Cuidado" class="footer-logo mb-3">
+          <h4>LUNA AUTO CUIDADO</h4>
+          <p style="font-size:.85rem; color:rgba(255,255,255,0.5); margin-top:6px;">Productos de Limpieza y Cuidado
+            Automotriz</p>
+        </div>
+        <div class="col-md-4">
+          <h6 style="color:var(--turq); font-weight:800; letter-spacing:2px; font-size:.8rem; margin-bottom:16px;">
+            CONTÁCTANOS</h6>
+          <div class="contact-item"><i class="fa fa-map-marker-alt"></i> Hualmay, Lima — Perú</div>
+          <div class="contact-item"><i class="fab fa-whatsapp"></i> WhatsApp disponible</div>
+          <div class="contact-item"><a href="https://maps.app.goo.gl/wWxgpBVd1ZTBi4np6" target="_blank"
+              style="color:inherit;text-decoration:none"><i class="fab fa-google"></i> Ver en Google Maps</a></div>
+        </div>
+        <div class="col-md-5">
+          <h6 style="color:var(--turq); font-weight:800; letter-spacing:2px; font-size:.8rem; margin-bottom:16px;">
+            NUESTROS PRODUCTOS</h6>
+          <div class="row g-2">
+            <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i class="fa fa-wind me-1"
+                  style="color:var(--turq)"></i>Ambientadores</span></div>
+            <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i class="fa fa-star me-1"
+                  style="color:var(--turq)"></i>Siliconas</span></div>
+            <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i class="fa fa-broom me-1"
+                  style="color:var(--verde)"></i>Limpieza</span></div>
+            <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i
+                  class="fa fa-spray-can me-1" style="color:var(--verde)"></i>Shampoo Auto</span></div>
+            <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i class="fa fa-tshirt me-1"
+                  style="color:var(--verde)"></i>Microfibra</span></div>
+            <div class="col-4"><span style="font-size:.8rem; color:rgba(255,255,255,0.6)"><i
+                  class="fa fa-hand-paper me-1" style="color:var(--verde)"></i>Guantes</span></div>
+          </div>
         </div>
       </div>
+      <div class="copy">© <span id="year-footer"></span> Luna Auto Cuidado — Todos los derechos reservados</div>
     </div>
-    <div class="copy">© <span id="year-footer"></span> Luna Auto Cuidado — Todos los derechos reservados</div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Scroll to top -->
-<button id="btnTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-  <i class="fa fa-chevron-up"></i>
-</button>
-
-<!-- WhatsApp flotante -->
-<div class="wa-wrap" id="waWrap">
-  <div class="wa-tooltip" id="waTooltip">¡Hola! ¿En qué te ayudamos? 👋</div>
-  <button class="wa-btn" id="waBtn" onclick="toggleWaMenu()">
-    <i class="fab fa-whatsapp"></i>
-    <span class="wa-pulse"></span>
+  <!-- Scroll to top -->
+  <button id="btnTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fa fa-chevron-up"></i>
   </button>
-  <div class="wa-menu" id="waMenu">
-    <a class="wa-option" href="https://wa.me/51989656783?text=Hola!%20Vi%20su%20catálogo%20y%20quiero%20información%20sobre%20ambientadores%20🌸" target="_blank">
-      <span class="wa-opt-icon" style="background:#00c853"><i class="fa fa-wind"></i></span>
-      <span>Ambientadores</span>
-    </a>
-    <a class="wa-option" href="https://wa.me/51989656783?text=Hola!%20Vi%20su%20catálogo%20y%20quiero%20información%20sobre%20siliconas%20✨" target="_blank">
-      <span class="wa-opt-icon" style="background:#1A3A6B"><i class="fa fa-star"></i></span>
-      <span>Siliconas</span>
-    </a>
-    <a class="wa-option" href="https://wa.me/51989656783?text=Hola!%20Vi%20su%20catálogo%20y%20quiero%20información%20sobre%20productos%20de%20limpieza%20🧹" target="_blank">
-      <span class="wa-opt-icon" style="background:#8DC63F"><i class="fa fa-broom"></i></span>
-      <span>Limpieza</span>
-    </a>
-    <a class="wa-option" href="https://wa.me/51989656783?text=Hola!%20Vi%20su%20catálogo%20y%20quisiera%20hacer%20un%20pedido%20🛒" target="_blank">
-      <span class="wa-opt-icon" style="background:#e53935"><i class="fa fa-shopping-cart"></i></span>
-      <span>Hacer pedido</span>
-    </a>
-  </div>
-</div>
 
-<!-- Modal de producto -->
-<div class="prod-modal-overlay" id="prodModal" onclick="closeModal(event)">
-  <div class="prod-modal-box">
-    <button class="prod-modal-close" onclick="closeProdModal()"><i class="fa fa-times"></i></button>
-    <div class="prod-modal-img" id="modalImg"></div>
-    <div class="prod-modal-body">
-      <span class="prod-modal-badge" id="modalBadge"></span>
-      <h3 id="modalNombre"></h3>
-      <p id="modalDesc"></p>
-      <div id="modalFrags" class="frag-chips mb-3"></div>
-      <div class="prod-modal-prices" id="modalPrecios"></div>
-      <a id="modalWaBtn" href="#" target="_blank" class="btn-wa-modal">
-        <i class="fab fa-whatsapp me-2"></i>Consultar por WhatsApp
+  <!-- WhatsApp flotante -->
+  <div class="wa-wrap" id="waWrap">
+    <div class="wa-tooltip" id="waTooltip">¡Hola! ¿En qué te ayudamos? 👋</div>
+    <button class="wa-btn" id="waBtn" onclick="toggleWaMenu()">
+      <i class="fab fa-whatsapp"></i>
+      <span class="wa-pulse"></span>
+    </button>
+    <div class="wa-menu" id="waMenu">
+      <a class="wa-option"
+        href="https://wa.me/51989656783?text=Hola!%20Vi%20su%20catálogo%20y%20quiero%20información%20sobre%20ambientadores%20🌸"
+        target="_blank">
+        <span class="wa-opt-icon" style="background:#00c853"><i class="fa fa-wind"></i></span>
+        <span>Ambientadores</span>
+      </a>
+      <a class="wa-option"
+        href="https://wa.me/51989656783?text=Hola!%20Vi%20su%20catálogo%20y%20quiero%20información%20sobre%20siliconas%20✨"
+        target="_blank">
+        <span class="wa-opt-icon" style="background:#1A3A6B"><i class="fa fa-star"></i></span>
+        <span>Siliconas</span>
+      </a>
+      <a class="wa-option"
+        href="https://wa.me/51989656783?text=Hola!%20Vi%20su%20catálogo%20y%20quiero%20información%20sobre%20productos%20de%20limpieza%20🧹"
+        target="_blank">
+        <span class="wa-opt-icon" style="background:#8DC63F"><i class="fa fa-broom"></i></span>
+        <span>Limpieza</span>
+      </a>
+      <a class="wa-option"
+        href="https://wa.me/51989656783?text=Hola!%20Vi%20su%20catálogo%20y%20quisiera%20hacer%20un%20pedido%20🛒"
+        target="_blank">
+        <span class="wa-opt-icon" style="background:#e53935"><i class="fa fa-shopping-cart"></i></span>
+        <span>Hacer pedido</span>
       </a>
     </div>
   </div>
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
+  <!-- Modal de producto -->
+  <div class="prod-modal-overlay" id="prodModal" onclick="closeModal(event)">
+    <div class="prod-modal-box">
+      <button class="prod-modal-close" onclick="closeProdModal()"><i class="fa fa-times"></i></button>
+      <div class="prod-modal-img" id="modalImg"></div>
+      <div class="prod-modal-body">
+        <span class="prod-modal-badge" id="modalBadge"></span>
+        <h3 id="modalNombre"></h3>
+        <p id="modalDesc"></p>
+        <div id="modalFrags" class="frag-chips mb-3"></div>
+        <div class="prod-modal-prices" id="modalPrecios"></div>
+        <a id="modalWaBtn" href="#" target="_blank" class="btn-wa-modal">
+          <i class="fab fa-whatsapp me-2"></i>Consultar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
