@@ -66,6 +66,16 @@ const productos = [
     cat: 'ambientadores'
   },
   {
+    nombre: 'Perfume Déjà Vu Black',
+    badge: 'Perfume',
+    usos: ['🌸 Uso personal', '🎁 Regalo ideal', '👔 Día a día', '✨ Fragancia unisex'],
+    desc: 'Lieu Parfumeur Déjà Vu Black — perfume en spray de 60 ml con una explosión de notas cítricas frescas. Limón, naranja, mandarina y maracuyá se fusionan para crear un aroma vibrante, alegre y duradero. Ideal para el uso diario, regalar o llevar contigo. Su presentación compacta de 60 ml cabe en cualquier bolso o mochila.',
+    frags: ['Limón', 'Naranja', 'Mandarina', 'Maracuyá'],
+    precios: [{label:'Unidad (60 ml)', val:'S/ 8.00'}],
+    bg: 'linear-gradient(135deg,#fff8e1,#ffe0b2)',
+    cat: 'ambientadores'
+  },
+  {
     nombre: 'Speed Racer — Perfumador de Coche',
     badge: 'Ambientador Spray',
     usos: ['🚗 Interior auto', '🏍️ Moto taxi', '💺 Tapizados', '🌬️ Spray directo'],
@@ -121,7 +131,7 @@ const productos = [
     usos: ['🏢 Lavaderos', '🚗 Flota de vehículos', '🔄 Recarga frascos', '💰 Ahorro x mayor'],
     desc: 'Silicona líquida en galonera de 5 litros para uso profesional. Rinde para recargar múltiples frascos atomizadores. Ideal para lavaderos de autos, flotas de taxis o mototaxis. Protege vinilo, caucho y plásticos del interior y exterior. La mejor opción en costo-rendimiento.',
     frags: [],
-    precios: [{label:'Galonera 5L', val:'S/ 28.00'}],
+    precios: [{label:'Galonera', val:'S/ 28.00'}],
     bg: 'linear-gradient(135deg,#fce4ec,#fce4ec)',
     cat: 'siliconas'
   },
@@ -136,12 +146,32 @@ const productos = [
     cat: 'siliconas'
   },
   {
+    nombre: 'Provecar Silicona Full Fragancia 120ml',
+    badge: '120 ml',
+    usos: ['🚗 Tablero auto', '🛞 Caucho / Llantas', '🪑 Cuero / Vinil', '✨ Brillo profesional'],
+    desc: 'Silicona Full Fragancia Provecar en presentación de 120 ml con atomizador. Fórmula con protección UV que renueva, protege y da brillo intenso a tablero, plásticos, caucho, cuero y vinil del interior y exterior del auto. Su aroma duradero perfuma el habitáculo con cada aplicación. Tamaño ideal para llevar en la guantera. Rocía directamente y distribuye con un trapo de microfibra para un acabado tipo showroom.',
+    frags: ['Chicle', 'Varias fragancias'],
+    precios: [{label:'Unidad', val:'S/ 7.00'},{label:'3 unidades', val:'S/ 17.00', offer:true}],
+    bg: 'linear-gradient(135deg,#fafafa,#eeeeee)',
+    cat: 'siliconas'
+  },
+  {
+    nombre: 'Cera Líquida Automotriz',
+    badge: 'Cera',
+    usos: ['🚗 Carrocería auto', '🏍️ Moto / Mototaxi', '☀️ Protección UV', '💧 Repelente de agua'],
+    desc: 'Cera líquida de alta concentración para proteger y embellecer la pintura de tu auto o moto. Crea una capa protectora que repele el agua, la suciedad y los rayos UV, previniendo el desgaste y opacamiento de la pintura. Devuelve el brillo original con un acabado tipo espejo. Modo de uso: lava y seca bien el vehículo, aplica una capa fina con esponja o microfibra en movimientos circulares, espera 5-10 minutos hasta que seque y retira el residuo con un trapo de microfibra limpio. Se recomienda aplicar cada 2-3 meses para mantener la protección óptima.',
+    frags: [],
+    precios: [{label:'Frasco', val:'S/ 8.00'}],
+    bg: 'linear-gradient(135deg,#fffde7,#fff9c4)',
+    cat: 'siliconas'
+  },
+  {
     nombre: 'Escobilla de Limpieza',
     badge: 'Artículo Limpieza',
     usos: ['🚗 Limpieza auto', '🏠 Hogar', '🛁 Baño', '🍳 Cocina'],
     desc: 'Escobilla de limpieza multiusos con mango ergonómico antideslizante y cerdas resistentes de nylon. Ideal para limpiar el interior del auto, fregar pisos, baños y cocinas. Las cerdas firmes remueven la suciedad incrustada sin rayar las superficies. Duradera y fácil de usar.',
     frags: [],
-    precios: [{label:'Unidad', val:'S/ 4.00'},{label:'Docena', val:'S/ 22.00', offer:true}],
+    precios: [{label:'Unidad', val:'S/ 3.00'},{label:'Docena', val:'S/ 28.00', offer:true}],
     bg: 'linear-gradient(135deg,#f3e5f5,#e1bee7)',
     cat: 'limpieza'
   },
@@ -196,12 +226,82 @@ const productos = [
     cat: 'limpieza'
   },
   {
+    nombre: 'Esponjas de Limpieza',
+    badge: 'Esponjas',
+    usos: ['🍽️ Lavar vajilla', '🚗 Lavado de auto', '🚿 Baño', '🏠 Superficies del hogar'],
+    desc: 'Esponjas de limpieza multiusos de celulosa suave. No rayan superficies delicadas como pintura, vidrio, cerámica ni plástico. Alta absorción de agua y jabón para una limpieza eficiente con menos producto. Ideales para lavar vajilla, limpiar el auto, fregar baños y cualquier tarea del hogar. Disponibles en colores amarillo, coral y lila. Resistentes y duraderas.',
+    frags: ['Amarilla','Coral','Lila'],
+    precios: [{label:'Unidad', val:'S/ 0.50'},{label:'x12 unidades', val:'S/ 5.00', offer:true}],
+    bg: 'linear-gradient(135deg,#fff9c4,#f8bbd0)',
+    cat: 'limpieza'
+  },
+  {
+    nombre: 'Atomizadores Rociadores de Gatillo',
+    badge: 'Accesorio',
+    usos: ['🧴 Aplicar siliconas', '🚗 Lavado de auto', '🏠 Limpieza del hogar', '🔄 Rellenable'],
+    desc: 'Atomizadores rociadores de gatillo de calidad industrial. Disponibles en color azul y verde. Compatibles con cualquier frasco de boca estándar. Ideales para aplicar silicona líquida, shampoo automotriz, desinfectantes y cualquier producto de limpieza en spray. Gatillo ergonómico de fácil accionamiento, boquilla ajustable entre chorro y neblina. Muy usados por lavaderos de autos y para recargar frascos de limpieza del hogar.',
+    frags: ['Azul','Verde'],
+    precios: [{label:'Unidad', val:'S/ 1.50'},{label:'Docena', val:'S/ 10.00', offer:true}],
+    bg: 'linear-gradient(135deg,#e3f2fd,#e8f5e9)',
+    cat: 'limpieza'
+  },
+  {
+    nombre: 'Virutex Pañitos Limpia Todo',
+    badge: 'Pañitos',
+    usos: ['🍳 Cocina', '🚿 Baño', '🪟 Vidrios / Espejos', '🚗 Interior auto'],
+    desc: 'Pañitos Limpia Todo marca Virutex. Paño multiusos de alta absorción fabricado en fibra especial que atrapa la suciedad, grasa y líquidos sin rayar las superficies. Ideal para limpiar mesadas, hornillas, baños, vidrios, espejos e interior del auto. Reutilizable: enjuágalo y sigue usándolo. Muy resistente al desgarro incluso en húmedo. Cada pañito rinde para múltiples limpiezas.',
+    frags: [],
+    precios: [{label:'Unidad', val:'S/ 1.00'},{label:'x12 unidades', val:'S/ 9.00', offer:true}],
+    bg: 'linear-gradient(135deg,#fffde7,#fff9c4)',
+    cat: 'limpieza'
+  },
+  {
+    nombre: 'Guantes Tatuados',
+    badge: 'Guantes',
+    usos: ['🧤 Protección de manos', '🚗 Lavado de auto', '🏠 Limpieza del hogar', '🎨 Uso casual / moda'],
+    desc: 'Guantes de manga larga con diseños tatuados estampados. Fabricados en tela elástica suave que se adapta a cualquier talla de mano. Protegen las manos y antebrazos durante la limpieza del auto, tareas del hogar o simplemente como accesorio de moda. Disponibles en diseño oceánico (con aves y colores vibrantes) y camuflaje (estampado militar con tigre). Ligeros, lavables y reutilizables.',
+    frags: ['Oceánico','Camuflaje'],
+    precios: [{label:'Unidad', val:'S/ 4.00'},{label:'Docena', val:'S/ 32.00', offer:true}],
+    bg: 'linear-gradient(135deg,#e0f7fa,#e8f5e9)',
+    cat: 'limpieza'
+  },
+  {
+    nombre: 'Florinda Jabón Líquido Antibacterial',
+    badge: 'Jabón Líquido',
+    usos: ['🙌 Lavado de manos', '🏠 Hogar', '🏢 Oficina', '🚿 Baño / Cocina'],
+    desc: 'Jabón líquido antibacterial Florinda con dosificador. Elimina gérmenes y bacterias del día a día dejando tus manos limpias, suaves y con un aroma agradable. Fórmula con glicerina que cuida e hidrata la piel con cada lavado. Disponible en 6 fragancias: Fresa, Manzana, Naranja, Lavanda, Floral y Eucalipto. Ideal para el baño, cocina, oficina o cualquier punto de lavado del hogar.',
+    frags: ['Fresa','Manzana','Naranja','Lavanda','Floral','Eucalipto'],
+    precios: [{label:'Unidad', val:'S/ 4.00'},{label:'3 unidades', val:'S/ 10.00', offer:true}],
+    bg: 'linear-gradient(135deg,#e8f5e9,#f3e5f5)',
+    cat: 'limpieza'
+  },
+  {
+    nombre: 'Florinda Desinfectante Aromático',
+    badge: 'Desinfectante',
+    usos: ['🏠 Pisos del hogar', '🚿 Baños', '🍳 Cocina', '🌸 Aromatizador'],
+    desc: 'Desinfectante aromático Florinda con fragancia Flores del Paraíso. Limpia y desinfecta pisos, baños y cocinas eliminando el 99.9% de gérmenes, bacterias y hongos (E. Coli, Salmonella, Staphylococcus aureus y más). Deja un aroma floral intenso y duradero en todo el ambiente del hogar. Modo de uso: diluye en agua para trapear o aplica directo sobre la superficie para mayor potencia desinfectante.',
+    frags: ['Flores del Paraíso'],
+    precios: [{label:'Unidad', val:'S/ 4.00'}],
+    bg: 'linear-gradient(135deg,#fce4ec,#f8bbd0)',
+    cat: 'limpieza'
+  },
+  {
+    nombre: 'Dkasa Limpiador Aromatizador',
+    badge: 'Limpiador',
+    usos: ['🏠 Pisos del hogar', '🍳 Cocina', '🚿 Baños', '🧹 Multiusos'],
+    desc: 'Limpiatodo aromatizado marca Dkasa. Limpia profundamente pisos, cocinas, baños y toda superficie lavable del hogar dejando una fragancia fresca y duradera de hasta 3-4 horas. Fórmula antibacterial que elimina gérmenes y bacterias al 99.99% (E. Coli, Staphylococcus aureus y más). Producto biodegradable. Modo de uso: aplica directamente sobre la superficie o diluye en agua para trapear pisos.',
+    frags: ['Frutales'],
+    precios: [{label:'Unidad', val:'S/ 4.00'}],
+    bg: 'linear-gradient(135deg,#ede7f6,#d1c4e9)',
+    cat: 'limpieza'
+  },
+  {
     nombre: 'Guantes Household Gloves',
     badge: 'Tallas S y M',
     usos: ['🧴 Limpieza con químicos', '🍽️ Lavar vajilla', '🚗 Lavado de auto', '🧹 Limpieza general'],
     desc: 'Guantes de limpieza doméstica con interior flock (suave como felpa) que protege tus manos. Fabricados en látex resistente a detergentes, siliconas y productos de limpieza. Disponibles en talla S y M. Ideales para lavar el auto, fregar vajilla o cualquier tarea de limpieza que involucre químicos. El paquete incluye 1 par.',
     frags: [],
-    precios: [{label:'Par (unidad)', val:'S/ 5.00'},{label:'Docena pares', val:'S/ 40.00', offer:true}],
+    precios: [{label:'Unidad', val:'S/ 5.00'},{label:'Docena', val:'S/ 40.00', offer:true}],
     bg: 'linear-gradient(135deg,#e8eaf6,#c5cae9)',
     cat: 'limpieza'
   }
@@ -231,8 +331,12 @@ function openModal(idx, cardEl) {
   modalImgDiv.style.background = p.bg;
   const imgEl = cardImg ? cardImg.querySelector('img') : null;
   modalImgDiv.innerHTML = imgEl
-    ? `<img src="${imgEl.src}" alt="${p.nombre}" style="max-height:200px;max-width:100%;object-fit:contain">`
+    ? `<div class="mz-wrap" id="mzWrap">
+        <img id="mzImg" src="${imgEl.src}" alt="${p.nombre}">
+        <span class="mz-hint">🔍 Scroll o click para zoom · Arrastra para mover</span>
+       </div>`
     : '';
+  if (imgEl) initMZoom();
 
   // Usos
   const fragsDiv = document.getElementById('modalFrags');
@@ -248,12 +352,20 @@ function openModal(idx, cardEl) {
 
   // Precios
   const preciosDiv = document.getElementById('modalPrecios');
-  preciosDiv.innerHTML = p.precios.map(pr =>
-    `<div class="pm-row">
-      <span class="pm-label">${pr.label}</span>
-      <span class="pm-price ${pr.offer?'offer':''}">${pr.val}</span>
-    </div>`
-  ).join('');
+  preciosDiv.innerHTML = p.precios.map(pr => {
+    let fakeHtml = '';
+    if (pr.offer) {
+      const val = parseFloat(pr.val.replace('S/', '').trim());
+      fakeHtml = `<span class="pm-price-fake">S/ ${(val + 1.5).toFixed(2)}</span>`;
+    }
+    return `<div class="pm-row">
+      <span class="pm-label">${pr.label}${pr.offer ? '<span class="pm-promo-tag">🔥 OFERTA</span>' : ''}</span>
+      <div style="display:flex;flex-direction:column;align-items:flex-end">
+        ${fakeHtml}
+        <span class="pm-price ${pr.offer?'offer':''}">${pr.val}</span>
+      </div>
+    </div>`;
+  }).join('');
 
   // WhatsApp link
   const msg = `Hola! Vi su catálogo y quiero información sobre: *${p.nombre}* 🛒`;
@@ -273,7 +385,96 @@ function closeModal(e) {
 }
 
 // Cerrar con ESC
-document.addEventListener('keydown', e => { if(e.key==='Escape') closeProdModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeProdModal(); });
+
+// ── ZOOM INLINE CON DRAG ──
+function initMZoom() {
+  const wrap = document.getElementById('mzWrap');
+  const img  = document.getElementById('mzImg');
+  if (!wrap || !img) return;
+
+  let scale = 1, tx = 0, ty = 0;
+  let dragging = false, moved = false, ox = 0, oy = 0;
+
+  function apply(smooth) {
+    img.style.transition = smooth ? 'transform .2s ease' : 'none';
+    img.style.transform  = `translate(${tx}px,${ty}px) scale(${scale})`;
+    wrap.classList.toggle('mz-panning',  scale > 1 && !dragging);
+    wrap.classList.toggle('mz-dragging', dragging);
+  }
+
+  function clamp() {
+    const mx = Math.max(0, (img.offsetWidth  * (scale - 1)) / 2);
+    const my = Math.max(0, (img.offsetHeight * (scale - 1)) / 2);
+    tx = Math.max(-mx, Math.min(mx, tx));
+    ty = Math.max(-my, Math.min(my, ty));
+  }
+
+  // Scroll → zoom
+  wrap.addEventListener('wheel', e => {
+    e.preventDefault(); e.stopPropagation();
+    scale = Math.min(3, Math.max(1, scale + (e.deltaY < 0 ? 0.18 : -0.18)));
+    if (scale === 1) { tx = 0; ty = 0; }
+    clamp(); apply(true);
+  }, { passive: false });
+
+  // Click → toggle zoom
+  wrap.addEventListener('click', e => {
+    if (moved) return;
+    scale = scale > 1 ? 1 : 2;
+    if (scale === 1) { tx = 0; ty = 0; }
+    clamp(); apply(true);
+  });
+
+  // Mouse drag
+  wrap.addEventListener('mousedown', e => {
+    if (scale <= 1) return;
+    dragging = true; moved = false;
+    ox = e.clientX - tx; oy = e.clientY - ty;
+    apply(false);
+    e.preventDefault();
+  });
+  document.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    moved = true;
+    tx = e.clientX - ox; ty = e.clientY - oy;
+    clamp(); apply(false);
+  });
+  document.addEventListener('mouseup', () => {
+    if (!dragging) return;
+    dragging = false; apply(false);
+    setTimeout(() => moved = false, 10);
+  });
+
+  // Touch — pinch zoom + arrastre
+  let lastDist = 0;
+  wrap.addEventListener('touchstart', e => {
+    if (e.touches.length === 2) {
+      lastDist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY);
+    } else if (scale > 1) {
+      ox = e.touches[0].clientX - tx;
+      oy = e.touches[0].clientY - ty;
+    }
+  }, { passive: true });
+  wrap.addEventListener('touchmove', e => {
+    e.preventDefault();
+    if (e.touches.length === 2) {
+      const d = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY);
+      scale = Math.min(3, Math.max(1, scale * (d / lastDist)));
+      lastDist = d;
+      if (scale === 1) { tx = 0; ty = 0; }
+      clamp(); apply(false);
+    } else if (scale > 1) {
+      tx = e.touches[0].clientX - ox;
+      ty = e.touches[0].clientY - oy;
+      clamp(); apply(false);
+    }
+  }, { passive: false });
+}
 
 // ── SLIDER ──
 let slideActual = 0;
@@ -324,6 +525,25 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 document.querySelectorAll('.prod-card').forEach(c => observer.observe(c));
+
+// ── PRECIOS FALSOS TACHADOS (efecto promoción) ──
+function aplicarPreciosFalsos() {
+  document.querySelectorAll('.price-item').forEach(item => {
+    const offerEl = item.querySelector('.price-val.offer');
+    if (!offerEl) return;
+    const val = parseFloat(offerEl.textContent.replace('S/', '').trim());
+    if (isNaN(val)) return;
+    const fake = `S/ ${(val + 1.5).toFixed(2)}`;
+    const wrap = document.createElement('div');
+    wrap.className = 'price-val-wrap';
+    wrap.innerHTML = `<span class="price-fake">${fake}</span>`;
+    offerEl.parentNode.insertBefore(wrap, offerEl);
+    wrap.appendChild(offerEl);
+    const labelEl = item.querySelector('.price-label');
+    if (labelEl) labelEl.innerHTML += ' <span class="promo-tag-card">🔥 OFERTA</span>';
+  });
+}
+aplicarPreciosFalsos();
 
 // ── NAV ACTIVO AL SCROLL ──
 window.addEventListener('scroll', () => {
