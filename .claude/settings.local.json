@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\laragon\\\\www\\\\autocuidadoluna\" -Recurse -File)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\laragon\\\\www\\\\autocuidadoluna\" -Recurse -File | ForEach-Object { $_.FullName })"
+    ]
+  }
+}

@@ -151,7 +151,7 @@ const productos = [
     usos: ['🚗 Tablero auto', '🛞 Caucho / Llantas', '🪑 Cuero / Vinil', '✨ Brillo profesional'],
     desc: 'Silicona Full Fragancia Provecar en presentación de 120 ml con atomizador. Fórmula con protección UV que renueva, protege y da brillo intenso a tablero, plásticos, caucho, cuero y vinil del interior y exterior del auto. Su aroma duradero perfuma el habitáculo con cada aplicación. Tamaño ideal para llevar en la guantera. Rocía directamente y distribuye con un trapo de microfibra para un acabado tipo showroom.',
     frags: ['Chicle', 'Varias fragancias'],
-    precios: [{label:'Unidad', val:'S/ 7.00'},{label:'3 unidades', val:'S/ 17.00', offer:true}],
+    precios: [{label:'Unidad', val:'S/ 7.00'},{label:'3 unidades', val:'S/ 17.00', offer:true},{label:'Caja de 12', val:'S/ 60.00', offer:true}],
     bg: 'linear-gradient(135deg,#fafafa,#eeeeee)',
     cat: 'siliconas'
   },
@@ -171,7 +171,7 @@ const productos = [
     usos: ['🚗 Limpieza auto', '🏠 Hogar', '🛁 Baño', '🍳 Cocina'],
     desc: 'Escobilla de limpieza multiusos con mango ergonómico antideslizante y cerdas resistentes de nylon. Ideal para limpiar el interior del auto, fregar pisos, baños y cocinas. Las cerdas firmes remueven la suciedad incrustada sin rayar las superficies. Duradera y fácil de usar.',
     frags: [],
-    precios: [{label:'Unidad', val:'S/ 3.00'},{label:'Docena', val:'S/ 28.00', offer:true}],
+    precios: [{label:'Unidad', val:'S/ 4.00'},{label:'Docena', val:'S/ 28.00', offer:true}],
     bg: 'linear-gradient(135deg,#f3e5f5,#e1bee7)',
     cat: 'limpieza'
   },
@@ -181,7 +181,7 @@ const productos = [
     usos: ['🚗 Carrocería auto', '🏍️ Moto / Mototaxi', '🚐 Camionetas', '✨ Brillo concentrado'],
     desc: 'Shampoo con fórmula de brillo concentrado especial para la carrocería de autos, motos y mototaxis. Limpia profundamente la suciedad, grasa y polvo del camino. No daña la pintura ni el barniz. Deja la carrocería brillante y protegida. Mezcla con agua para mayor rendimiento.',
     frags: ['Manzana Verde','New Car','Fresa'],
-    precios: [{label:'Frasco', val:'S/ 4.00'},{label:'Litro', val:'S/ 15.00', offer:true}],
+    precios: [{label:'Frasco', val:'S/ 4.00'},{label:'Litro', val:'S/ 12.00', offer:true}],
     bg: 'linear-gradient(135deg,#e3f2fd,#bbdefb)',
     cat: 'limpieza'
   },
@@ -201,7 +201,7 @@ const productos = [
     usos: ['🚗 Secado auto', '🪟 Vidrios', '🪞 Espejos', '🏠 Superficies del hogar'],
     desc: 'Trapo de microfibra de alta densidad 70x40 cm. La microfibra atrapa el polvo, suciedad y líquidos sin dejar pelusa ni rayar. Ideal para secar la carrocería tras el lavado, limpiar vidrios, espejos y superficies delicadas. Muy absorbente, reutilizable y lavable a máquina. Disponible en varios colores.',
     frags: [],
-    precios: [{label:'Unidad', val:'S/ 5.00'},{label:'Docena', val:'S/ 42.00', offer:true}],
+    precios: [{label:'Unidad', val:'S/ 5.00'},{label:'Docena', val:'S/ 40.00', offer:true}],
     bg: 'linear-gradient(135deg,#e8f5e9,#dcedc8)',
     cat: 'limpieza'
   },
@@ -221,7 +221,7 @@ const productos = [
     usos: ['🏠 Pisos del hogar', '🏢 Negocios', '🚿 Baños', '🍳 Cocinas'],
     desc: 'Trapeador de microfibra premium Ultra-Clean Pro de 58x39 cm con mango ergonómico amarillo. La microfibra de alta densidad absorbe hasta 7 veces su peso en líquidos. Limpia y atrapa bacterias, polvo y residuos en una sola pasada. Reutilizable, lavable a máquina y de larga duración.',
     frags: [],
-    precios: [{label:'Unidad', val:'S/ 2.50'},{label:'Docena', val:'S/ 21.00', offer:true}],
+    precios: [{label:'Unidad', val:'S/ 2.50'},{label:'Docena', val:'S/ 20.00', offer:true}],
     bg: 'linear-gradient(135deg,#eceff1,#cfd8dc)',
     cat: 'limpieza'
   },
@@ -251,7 +251,7 @@ const productos = [
     usos: ['🍳 Cocina', '🚿 Baño', '🪟 Vidrios / Espejos', '🚗 Interior auto'],
     desc: 'Pañitos Limpia Todo marca Virutex. Paño multiusos de alta absorción fabricado en fibra especial que atrapa la suciedad, grasa y líquidos sin rayar las superficies. Ideal para limpiar mesadas, hornillas, baños, vidrios, espejos e interior del auto. Reutilizable: enjuágalo y sigue usándolo. Muy resistente al desgarro incluso en húmedo. Cada pañito rinde para múltiples limpiezas.',
     frags: [],
-    precios: [{label:'Unidad', val:'S/ 1.00'},{label:'x12 unidades', val:'S/ 9.00', offer:true}],
+    precios: [{label:'Unidad', val:'S/ 1.00'},{label:'x20 unidades', val:'S/ 15.00', offer:true}],
     bg: 'linear-gradient(135deg,#fffde7,#fff9c4)',
     cat: 'limpieza'
   },
@@ -261,7 +261,7 @@ const productos = [
     usos: ['🧤 Protección de manos', '🚗 Lavado de auto', '🏠 Limpieza del hogar', '🎨 Uso casual / moda'],
     desc: 'Guantes de manga larga con diseños tatuados estampados. Fabricados en tela elástica suave que se adapta a cualquier talla de mano. Protegen las manos y antebrazos durante la limpieza del auto, tareas del hogar o simplemente como accesorio de moda. Disponibles en diseño oceánico (con aves y colores vibrantes) y camuflaje (estampado militar con tigre). Ligeros, lavables y reutilizables.',
     frags: ['Oceánico','Camuflaje'],
-    precios: [{label:'Unidad', val:'S/ 4.00'},{label:'Docena', val:'S/ 32.00', offer:true}],
+    precios: [{label:'Unidad', val:'S/ 4.00'},{label:'Docena', val:'S/ 30.00', offer:true}],
     bg: 'linear-gradient(135deg,#e0f7fa,#e8f5e9)',
     cat: 'limpieza'
   },
