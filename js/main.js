@@ -359,7 +359,7 @@ function openModal(idx, cardEl) {
       fakeHtml = `<span class="pm-price-fake">S/ ${(val + 1.5).toFixed(2)}</span>`;
     }
     return `<div class="pm-row">
-      <span class="pm-label">${pr.label}${pr.offer ? '<span class="pm-promo-tag">🔥 OFERTA</span>' : ''}</span>
+      <span class="pm-label">${pr.label}${pr.offer ? '<span class="pm-promo-tag">🔥 <span class="oferta-word">OFERTA</span></span>' : ''}</span>
       <div style="display:flex;flex-direction:column;align-items:flex-end">
         ${fakeHtml}
         <span class="pm-price ${pr.offer?'offer':''}">${pr.val}</span>
@@ -540,7 +540,7 @@ function aplicarPreciosFalsos() {
     offerEl.parentNode.insertBefore(wrap, offerEl);
     wrap.appendChild(offerEl);
     const labelEl = item.querySelector('.price-label');
-    if (labelEl) labelEl.innerHTML += ' <span class="promo-tag-card">🔥 OFERTA</span>';
+    if (labelEl) labelEl.innerHTML += ' <span class="promo-tag-card">🔥 <span class="oferta-word">OFERTA</span></span>';
   });
 }
 aplicarPreciosFalsos();
