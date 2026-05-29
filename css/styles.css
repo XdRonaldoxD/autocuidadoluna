@@ -48,6 +48,7 @@
     opacity: 0;
     transition: opacity .8s ease, transform .8s ease;
     transform: scale(1.04);
+    will-change: opacity, transform;
   }
   .slide.active {
     opacity: 1;
@@ -372,6 +373,7 @@
     box-shadow: 0 4px 20px rgba(26,58,107,0.08);
     transition: transform .3s, box-shadow .3s;
     height: 100%;
+    will-change: transform;
     display: flex; flex-direction: column;
   }
   .prod-card:hover {

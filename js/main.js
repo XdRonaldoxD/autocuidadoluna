@@ -500,17 +500,16 @@ function moverSlide(dir) {
 }
 
 // ── SCROLL TO TOP ──
-window.addEventListener('scroll', () => {
-  document.getElementById('btnTop').style.display = window.scrollY > 300 ? 'block' : 'none';
-});
+// (unificado con nav activo abajo)
 
 // ── NAV SCROLL ──
 function irA(id, btn) {
   const el = document.getElementById(id);
   if (!el) return;
-  const navH = document.querySelector('.nav-cats').offsetHeight || 55;
+  const header = document.querySelector('.sticky-header');
+  const navH = header ? header.offsetHeight : 55;
   const top = el.getBoundingClientRect().top + window.pageYOffset - navH - 8;
-  window.scrollTo({ top: top, behavior: 'smooth' });
+  window.scrollTo({ top, behavior: 'smooth' });
   document.querySelectorAll('.btn-cat').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
 }
@@ -545,24 +544,35 @@ function aplicarPreciosFalsos() {
 }
 aplicarPreciosFalsos();
 
-// ── NAV ACTIVO AL SCROLL ──
-window.addEventListener('scroll', () => {
-  const secs = ['ambientadores','siliconas','limpieza'];
-  const btns = document.querySelectorAll('.btn-cat');
+// ── SCROLL: btnTop + nav activo (un solo listener, RAF throttled) ──
+const _btnTop = document.getElementById('btnTop');
+const _secIds = ['ambientadores','siliconas','limpieza'];
+const _secs   = _secIds.map(id => document.getElementById(id));
+const _btns   = Array.from(document.querySelectorAll('.btn-cat'));
+let _scrollTick = false;
+
+function _onScroll() {
+  _btnTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+
   let found = false;
-  for (let i = secs.length - 1; i >= 0; i--) {
-    const el = document.getElementById(secs[i]);
-    if (!el) continue;
-    const rect = el.getBoundingClientRect();
-    if (rect.top <= 100) {
-      btns.forEach(b => b.classList.remove('active'));
-      btns[i].classList.add('active');
+  for (let i = _secs.length - 1; i >= 0; i--) {
+    if (_secs[i] && _secs[i].getBoundingClientRect().top <= 100) {
+      _btns.forEach(b => b.classList.remove('active'));
+      _btns[i].classList.add('active');
       found = true;
       break;
     }
   }
   if (!found) {
-    btns.forEach(b => b.classList.remove('active'));
-    btns[0].classList.add('active');
+    _btns.forEach(b => b.classList.remove('active'));
+    if (_btns[0]) _btns[0].classList.add('active');
   }
-});
+  _scrollTick = false;
+}
+
+window.addEventListener('scroll', () => {
+  if (!_scrollTick) {
+    requestAnimationFrame(_onScroll);
+    _scrollTick = true;
+  }
+}, { passive: true });
