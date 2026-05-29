@@ -1,4 +1,41 @@
 
+  /* ── BARRA REDES SOCIALES ── */
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .social-bar {
+    background: #111;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 24px;
+  }
+  .social-bar-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: .82rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    transition: color .2s;
+  }
+  .social-bar-link i {
+    font-size: 1rem;
+    color: #1877F2;
+    transition: transform .2s;
+  }
+  .social-bar-link:hover {
+    color: #fff;
+  }
+  .social-bar-link:hover i {
+    transform: scale(1.18);
+  }
+
   /* ── HERO SLIDER ── */
   .hero-slider {
     position: relative;
@@ -270,7 +307,6 @@
   /* ── NAV ── */
   .nav-cats {
     background: var(--azul);
-    position: sticky; top: 0; z-index: 100;
     border-bottom: 3px solid var(--turq);
   }
   .nav-cats .btn-cat {

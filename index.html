@@ -44,6 +44,35 @@
 
 <body>
 
+  <!-- ══ HEADER STICKY (redes + nav) ══════════════════ -->
+  <div class="sticky-header">
+
+    <!-- Barra redes sociales -->
+    <div class="social-bar">
+      <a href="https://www.facebook.com/lunautocuidado" target="_blank" rel="noopener" class="social-bar-link">
+        <i class="fab fa-facebook-f"></i>
+        <span>Facebook</span>
+      </a>
+    </div>
+
+    <!-- Nav categorías -->
+    <nav class="nav-cats">
+      <div class="container d-flex gap-0"
+        style="overflow-x:auto; flex-wrap:nowrap; scrollbar-width:none; -ms-overflow-style:none;">
+        <button class="btn-cat active" onclick="irA('ambientadores',this)">
+          <i class="fa fa-wind me-1"></i>Ambientadores
+        </button>
+        <button class="btn-cat" onclick="irA('siliconas',this)">
+          <i class="fa fa-star me-1"></i>Siliconas
+        </button>
+        <button class="btn-cat" onclick="irA('limpieza',this)">
+          <i class="fa fa-broom me-1"></i>Limpieza
+        </button>
+      </div>
+    </nav>
+
+  </div>
+
   <!-- ══ HERO SLIDER ══════════════════════════════════ -->
   <section class="hero-slider">
     <!-- Slides -->
@@ -123,21 +152,6 @@
     </div>
   </section>
 
-  <!-- ══ NAV CATEGORÍAS ════════════════════════════════ -->
-  <nav class="nav-cats">
-    <div class="container d-flex gap-0"
-      style="overflow-x:auto; flex-wrap:nowrap; scrollbar-width:none; -ms-overflow-style:none;">
-      <button class="btn-cat active" onclick="irA('ambientadores',this)">
-        <i class="fa fa-wind me-1"></i>Ambientadores
-      </button>
-      <button class="btn-cat" onclick="irA('siliconas',this)">
-        <i class="fa fa-star me-1"></i>Siliconas
-      </button>
-      <button class="btn-cat" onclick="irA('limpieza',this)">
-        <i class="fa fa-broom me-1"></i>Limpieza
-      </button>
-    </div>
-  </nav>
 
   <!-- ══ MAIN ══════════════════════════════════════════ -->
   <main>
